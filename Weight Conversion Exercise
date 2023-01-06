@@ -1,0 +1,15 @@
+print("Weight Conversion Exercise")
+weight = float(input("Weight: "))
+unit = str(input("(K)g or (L)b: "))
+if unit == "k" or "kg" in unit:
+    weight_lb = weight * 2.20462
+    print("Weight in Lbs: " + str(weight_lb))
+    weight_lb_round = round(weight * 2.20462, 1)
+    print("Rounded weight in Lbs: " + str(weight_lb_round))
+elif unit == "l" or "lb" in unit:
+    weight_k = weight / 2.20462
+    print("Weight in Kg: " + str(weight_k))
+    weight_k_round = round(weight / 2.20462,1)
+    print("Rounded weight in Kg: " + str(weight_k_round))
+else:
+    print("Error: Try Again")
