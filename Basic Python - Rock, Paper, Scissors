@@ -1,0 +1,30 @@
+player = input("""
+    Rock, Paper, Scissors... Shoot!
+    : """)
+    import random
+    #import
+    choice = ['rock','paper','scissors']
+    computer = random.choice(choice)
+    if 'rock' in player.lower():
+        if 'rock' in computer.lower():
+            print("Tie")
+        elif 'paper' in computer.lower():
+            print("You lose! Paper covers rock.")
+        elif 'scissors' in computer.lower():
+            print("You win! Rock crushes scissors.")
+    elif 'paper' in player.lower():
+        if 'rock' in computer.lower():
+            print("You win! Paper covers rock.")
+        elif 'paper' in computer.lower():
+            print("Tie")
+        elif 'scissors' in computer.lower():
+            print("You lose! Scissors cut paper.")
+    elif 'scissors' in player.lower():
+        if 'rock' in computer.lower():
+            print("You lose! Rock crushes scissors.")
+        elif 'paper' in computer.lower():
+            print("You win! Scissors cuts paper.")
+        elif 'scissors' in computer.lower():
+            print("Tie")
+    else:
+        print("Sorry, I don't understand that...")
